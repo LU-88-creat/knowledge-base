@@ -1,0 +1,91 @@
+## Git Branching Strategies
+
+===========================
+
+### Different Branching Strategies
+
+Branching strategies are conventions teams use to organize development work and releases.
+
+---
+
+### 1. Git Flow
+
+Git Flow uses multiple long-lived branches and is suitable for projects with planned releases.
+
+Common branches:
+
+1. main – Production-ready code
+2. develop – Integration branch for ongoing development
+3. feature/* – New features
+4. release/* – Release preparation
+5. hotfix/* – Urgent production fixes
+
+Advantages:
+
+- Well-structured for large teams
+- Supports parallel development
+- Clear release process
+
+Disadvantages:
+
+- More complex
+- Can create overhead for small projects
+---
+
+### 2. GitHub Flow
+
+GitHub Flow is a simpler workflow commonly used for web applications and continuous deployment.
+
+Main idea:
+
+- Keep main deployable at all times.
+- Create a branch for every change.
+- Open a pull request.
+- Review and merge into main.
+
+Advantages:
+
+- Simple and easy to learn
+- Works well with continuous deployment
+- Faster development cycle
+
+Disadvantages:
+
+- Less structured for complex release management
+---
+
+
+## When to Create Branches
+
+Create a new branch whenever you work on something that should be isolated from the main codebase.
+
+### General Rule
+
+Create a branch whenever:
+
+- The work requires multiple commits.
+- Multiple people are collaborating.
+- The change is not yet ready for production.
+- You want the ability to discard the work safely.
+
+---
+
+## How to Name Branches
+
+Good branch names should be:
+
+- Descriptive
+- Consistent
+- Short but meaningful
+- Lowercase with hyphens
+
+### Branch Naming Best Practices
+
+Good Examples:
+           feature/add-search
+           bugfix/fix-login-timeout
+
+Poor Examples:
+           branch1
+           fix
+           test
