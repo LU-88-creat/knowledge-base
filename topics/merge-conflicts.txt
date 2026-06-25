@@ -1,0 +1,57 @@
+## Resolving Merge Conflicts
+
+============================
+
+## What causes merge conflicts
+
+A merge conflict occurs when a version control system like Git cannot automatically combine changes from two branches.
+
+Common causes include:
+
+
+### 1. Same lines modified in different branches
+
+* Branch A changes line 10 of a file.
+* Branch B also changes line 10 differently.
+* Git doesn't know which version to keep.
+
+### 2. A file is deleted in one branch and modified in another
+
+* One branch removes a file.
+* Another branch edits the same file.
+
+### 3. Simultaneous changes to nearby code
+
+* Even if the exact lines differ, overlapping changes can create ambiguity.
+
+### 4. Renames and structural changes
+
+* One branch renames or moves a file while another branch edits it.
+
+---
+
+## How to identify conflicts
+
+When you attempt a merge, Git will notify you if conflicts occur.
+
+Example:
+     git merge feature-branch
+
+You may see:
+Auto-merging app.js
+CONFLICT (content): Merge conflict in app.js
+Automatic merge failed; fix conflicts and then commit the result.
+
+---
+
+      
+## Step-by-step resolution process
+
+Step 1: Start the Merge
+Step 2: Check Conflicted Files
+Step 3: Open the Conflicted File
+Step 4: Decide what to Keep
+Step 5: Save the file in your editor
+Step 6: Mark the Conflict as Resolved
+Step 7: Complete the Merge
+Step 8: Verify the Result
