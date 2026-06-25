@@ -1,23 +1,128 @@
-TOPIC: Git Basics
+## TOPIC: Git Basics
 =================
 
 SUMMARY:
 Git is a distributed version control system that tracks changes in files.
 
-KEY CONCEPTS:
+## KEY CONCEPTS:
+
 - Repository: A folder where Git tracks your project
 - Commit: A snapshot of your files at a point in time
 - Branch: A separate line of development
 - Merge: Combining changes from different branches
 
-COMMON COMMANDS:
-- git init: Initialize a new repository
-- git add: Stage changes for commit
-- git commit: Save staged changes
-- git status: Check current state
-- git log: View commit history
+---
 
-TIPS:
+## COMMON COMMANDS:
+
+### 1. git init 
+
+Initialize a new repository.
+
+Example:
+      git init
+
+---
+
+### 2. git add 
+
+Stage changes for commit.
+
+Example:
+      git add .
+
+---
+
+### 3. git commit
+
+Save staged changes.
+
+Example:
+      git commit -m "Message"
+
+---
+
+### 4. git status
+
+Check current state.
+
+Example:
+      git status
+
+---
+
+### 5. git log
+
+View commit history.
+
+Example:
+      git log
+
+---
+
+### 6. git clone
+
+Copy a remote repository to your local machine.
+
+Example:
+      git clone github.com/Elimu-student/knowledge-base.git 
+
+---
+
+### 7. git push
+
+Upload local commits to a remote repository.
+
+Example:
+      git push origin main
+
+---
+
+### 8. git pull
+
+Fetch and merge the latest changes from a remote branch.
+
+Example:
+       git pull origin main
+
+---
+
+## TIPS:
+
 - Commit early and often
 - Write clear commit messages
 - Use branches for new features
+
+## Common mistakes and how to fix them:
+
+### Mistake 1: Commit without staging files 
+
+Fix:
+   
+ Stage files first: git add . then git commit -m "message"
+
+---
+
+### Mistake 2: Forget commit message  
+
+Fix: 
+
+ Use: git commit -m "Your message"
+
+---
+
+### Mistake 3: Merge conflicts  
+
+Fix:
+
+ Edit the conflicted files, remove markers, then git add . and git commit
+
+---
+
+### Mistake 4: Push before pulling latest changes 
+
+Fix:
+
+ Run git pull origin main, resolve conflicts if needed, then git push origin main
+
+
